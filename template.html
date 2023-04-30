@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$>
+<head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-25274726-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$">
+$endif$
+  <title>Rory Turnbull</title>
+  <script src="assets/js/sorttable.js"></script>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+   <section id="header">
+    <header>
+     <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+     <h1 id="logo"><a href="#">$author$</a></h1>
+     <p>Lecturer in Phonetics and Phonology<br />
+     Newcastle University</p>
+    </header>
+    <nav id="nav">
+     <ul>
+      <li><a href="#one" class="active">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#pubs">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+    </nav>
+    <footer>
+    </footer>
+   </section>
+
+  <!-- Wrapper -->
+   <div id="wrapper">
+
+    <!-- Main -->
+     <div id="main">
+       <section id="one">
+         <div class="container">
+           <header class="major">
+             <h2>$title$</h2>
+           </header>
+           <p>$subtitle$</p>
+         </div>
+       </section>
+       <section>
+         <div class="container">
+           $body$
+         </div>
+       </section>
+     </div>
+
+    <!-- Footer -->
+     <section id="footer">
+      <div class="container">
+       <ul class="copyright">
+        <li>&copy; Rory Turnbull. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+       </ul>
+      </div>
+     </section>
+
+   </div>
+
+  <!-- Scripts -->
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/jquery.scrollzer.min.js"></script>
+   <script src="assets/js/jquery.scrolly.min.js"></script>
+   <script src="assets/js/skel.min.js"></script>
+   <script src="assets/js/util.js"></script>
+   <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+   <script src="assets/js/main.js"></script>
+
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
