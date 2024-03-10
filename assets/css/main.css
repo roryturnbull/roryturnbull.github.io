@@ -3068,10 +3068,7 @@
 
 	}
 
-/* Finally, some fiddling to get reversed lists... */
+/* Finally, some fiddling to get reversed lists, only in Firefox for now... */
 ol {
-	transform: rotate(180deg);
-}
-ol > li {
-	transform: rotate(-180deg);
+    counter-reset: reversed(list-item); // or any other counter name in scope
 }
