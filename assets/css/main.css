@@ -3070,5 +3070,5 @@
 
 /* Finally, some fiddling to get reversed lists, only in Firefox for now... */
 ol {
-    counter-reset: reversed(list-item); // or any other counter name in scope
+    counter-reset: reversed(list-item);
 }
